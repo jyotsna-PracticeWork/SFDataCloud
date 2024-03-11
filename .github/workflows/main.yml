@@ -43,4 +43,4 @@ jobs:
 
     # Run QA Validation of Deploy Source
     - name: Run QA Validation on Deploy Source
-      run: sfdx force:source:deploy -c -p force-app -l NoTestRun -u jyotsna.x.bhujbal@haleon.com
+      run: sf project deploy start -d /force-app -l NoTestRun -u jyotsna.x.bhujbal@haleon.com
