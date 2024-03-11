@@ -12,4 +12,4 @@
     <masterLabel>TestSampleFile.csv</masterLabel>
     <mktDataLakeObject>TestSampleFilecsv__dll</mktDataLakeObject>
     <mktDataTranObject>TestSampleFilecsv</mktDataTranObject>
-</DataStreamDefinition>  
+</DataStreamDefinition> 
