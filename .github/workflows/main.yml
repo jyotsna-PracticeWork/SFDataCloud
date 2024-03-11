@@ -35,3 +35,12 @@ jobs:
     #Authorize MyDataCloud org
     - name: Authorize MyDataCloud Org 
       run: sfdx force:auth:jwt:grant --client-id 3MVG9Rr0EZ2YOVMZS97WX10cck5iaCD_PSGwuIbmwlbGesVSMYPbcvE5JWDz02GXlxYAfBsBZz6zvY9RaBdSA --jwt-key-file assets/server.key --username admin@datacloud.workshop11.org --instance-url https://login.salesforce.com
+   #Authorize Haleon org
+    - name: Authorize Haleon Org 
+      run: sfdx force:auth:jwt:grant --client-id 3MVG9DREgiBqN9WkMrsOaugvsz9sDv23jFWIZFu18xwe0g0Q6ISIxDY.5XPsYTnBL4WRN6aU6XlL9cHA7.0Ty --jwt-key-file assets/server.key --username jyotsna.x.bhujbal@haleon.com --instance-url https://login.salesforce.com
+
+    
+
+    # Run QA Validation of Deploy Source
+    - name: Run QA Validation on Deploy Source
+      run: sfdx force:source:deploy -c -p force-app -l NoTestRun -u jyotsna.x.bhujbal@haleon.com
