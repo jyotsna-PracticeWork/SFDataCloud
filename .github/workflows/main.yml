@@ -15,7 +15,7 @@ jobs:
   
   validate:
     
-    runs-on: ubuntu-23.10
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [20.x]
@@ -43,4 +43,4 @@ jobs:
 
     # Run QA Validation of Deploy Source
     - name: Run QA Validation on Deploy Source
-      run: sfdx force:source:deploy -c -p force-app -l NoTestRun -u jyotsna.x.bhujbal@haleon.com
+      run: sfdx force:source:deploy -c -p force-app -l NoTestRun -u admin@datacloud.workshop11.org
